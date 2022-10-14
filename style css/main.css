@@ -1,0 +1,94 @@
+:root{
+    --margin-bottom: 20px;
+}
+body{
+    background: black;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form{
+    background: rgba(255, 255, 255, 10%);
+    padding: 30px 15px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0 20px 5px black;
+}
+form::before{
+    content: '';
+    position: absolute;
+    top: -32px;
+    left: -45px;
+    z-index: -1;
+    background: linear-gradient(135deg, #0048b7, #03adfb);
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+form::after{
+    content: '';
+    position: absolute;
+    bottom: -32px;
+    right: -45px;
+    z-index: -1;
+    background: linear-gradient(-135deg, #fe3335, #f88101);
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+form h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: wheat;
+}
+form p{
+    margin-bottom: 10px;
+}
+form input{
+    background: rgba(255, 255, 255, 10%);
+    padding: 10px 5px; 
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-bottom: var(--margin-bottom);
+    color: wheat;
+    caret-color: wheat;
+}
+form input::placeholder{
+    color: white;
+    font-size: 12px;
+}
+form button{
+    width: 100%;
+    text-align: center;
+    background: white;
+    color: black;
+    border: none;
+    margin-bottom: var(--margin-bottom);
+    padding: 8px 0;
+    font-weight: 600;
+    border-radius: 2px;
+}
+form .icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+form .icons i{
+    background: rgba(255, 255, 255, 40%);
+    padding: 5px;
+}
+form .icons i span{
+    padding-left: 5px;
+}
